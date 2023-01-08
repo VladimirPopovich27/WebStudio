@@ -1,0 +1,91 @@
+/* CLIENTS_ */
+
+.clients {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @include desktop {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
+.clients__title {
+  margin-bottom: 30px;
+  min-width: 314px;
+  color: $primari-text-color;
+  @include font(28, null, 33, 0.03);
+  text-align: center;
+
+  @include desktop {
+    @include font(36, null, 42, 0.03);
+    margin-bottom: 50px;
+  }
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  
+
+  @media screen and (max-width: 479px) {
+    min-width: 100%;
+  }
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.clients__item {
+  flex-basis: calc((100% - 30px) / 2);
+
+  @include tablet {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 150px) / 6);
+  }
+}
+
+.clients__link {
+  @include flex-align-justify;
+  flex-direction: column;
+
+  width: 210px;
+  height: 92px;
+  color: #afb1b8;
+  background-color: $text-white;
+  border: 1px solid #afb1b8;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  padding: 16px 52px;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+
+  @media screen and (max-width: 479px) {
+    width: 200px;
+    height: 92px;
+  }
+
+  @include tablet {
+    width: 226px;
+    height: 92px;
+    padding: 16px 60px;
+  }
+
+  @include desktop {
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}

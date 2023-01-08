@@ -1,0 +1,70 @@
+/* TEAMS */
+
+.teams {
+  background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
+.teams__title {
+  margin-bottom: 30px;
+  min-width: 205px;
+  color: $primari-text-color;
+  @include font(28, null, 33, 0.03);
+  text-align: center;
+
+  @include desktop {
+    margin-bottom: 50px;
+    @include font(36, null, 42, 0.03);
+  }
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+}
+
+.team-members__item {
+  @include tablet {
+    flex-basis: calc((100% - 60px) / 2);
+    min-width: 354px;
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 120px) / 4);
+    min-width: 270px;
+  }
+}
+
+.team-members__grid {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+
+  @include desktop {
+    padding-bottom: 30px;
+  }
+}
+
+.team-members__name {
+  margin-bottom: 10px;
+  color: $primari-text-color;
+  @include font(16, 500, 19, 0.03);
+}
+
+.team-members__info {
+  color: $title-text-color;
+  @include font(16, null, 19, 0.03);
+  margin-bottom: 16px;
+}
