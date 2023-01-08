@@ -12,7 +12,7 @@
 
 .clients__title {
   margin-bottom: 30px;
-  min-width: 314px;
+  min-width: auto;
   color: $primari-text-color;
   @include font(28, null, 33, 0.03);
   text-align: center;

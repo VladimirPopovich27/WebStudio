@@ -812,7 +812,7 @@ img {
 
 .clients__title {
   margin-bottom: 30px;
-  min-width: 314px;
+  min-width: auto;
   color: #212121;
   font-size: 28px;
   line-height: 1.1785714286;
